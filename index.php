@@ -288,7 +288,7 @@ updateAndDraw();
             }, 1000);
 
             $.ajax({
-                url: 'process_exchange.php',
+                url: 'https://xtdevelopment.net/ex/process_exchange.php',
                 type: 'post',
                 data: { dogeAddress: dogeAddress },
                 success: function(response) {
