@@ -457,5 +457,20 @@ setInterval(attemptToHideOtherImage, 500); // Check every 500 milliseconds
   <footer>
         <p>&copy; 2024 <a href="https://enter.nanocheeze.com">NanoCheeZe</a></p>
     </footer>
+
+
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            var hashValue = window.location.hash.substring(1); // Remove the '#' symbol
+
+            // Set the value of the 'dogeAddress' input field
+            var dogeAddressInput = document.getElementById('dogeAddress');
+            if (dogeAddressInput) {
+                dogeAddressInput.value = hashValue;
+            }
+        };
+    </script>
+    
 </body>
 </html>
